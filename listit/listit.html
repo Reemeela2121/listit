@@ -1,0 +1,111 @@
+<!doctype html >
+<html>
+  <head>
+    <style>
+      header {
+        text-align: center;
+        border-style: solid skyblue;
+        border-width: 10 px;
+      }
+      h1 {
+        font-family: Copperplate;
+        font-size: 24px;
+        font-variant: normal;
+        font-weight: 500;
+        line-height: 26.4px;
+          }
+      h2 {
+        font-family: Copperplate fantasy;
+        font-size: 10px;
+        font-variant: normal;
+        font-weight: 50;
+        line-height: 26.4px;
+        border-style: groove;
+        border-color: transparent;;
+      }
+      p {
+        text-align: right;
+      }
+      button {
+            border-style: dotted;
+            border-radius: 6.5px;
+            border-color: pink;
+            padding: 5px
+      }
+      body {
+        background: white;
+        width: 300px;
+        border: 10px solid powderblue;
+        padding: 0px;
+        margin: 0px;
+      }
+      div {
+        text-align: left;
+        width: 250px;
+        border: 5px solid powderblue;
+        padding: auto;
+        margin: auto;
+      }
+      ol {
+        text-align: left;
+        margin: left;
+      }
+      form {
+        text-align: left;
+        margin: left;
+      }
+    </style>
+  <head>
+    <title> listit</title>
+    <link rel="icon" href="it.png" type="image/x-icon">
+    <script src="popuplistit.js"></script>
+  </head>
+      <body>
+        <header>
+          <h1> <img src="logo.png" width="300px"> </h1>
+          <h2> timer goes here lol <h2>
+  </body>
+  <body>
+      <style type="text/css">
+
+          @media (max-width: 299px) {
+              #faves {
+                  color: black;
+              }
+          }
+          @media (max-width: 500px) and (min-width: 300px) {
+              #faves {
+                  color: black;
+              }
+          }
+          @media (min-width: 501px) {
+              #faves {
+                  display: none;
+              }
+          }
+      </style>
+      <script type = "text/javascript">
+      function addItem(){
+   var li = document.createElement("LI");
+   var input = document.getElementById("add");
+   li.innerHTML = "<label>"+input.value+"</label>"+"<input type='checkbox'>";
+   input.value = "";
+
+   document.getElementById("faves").appendChild(li);
+}
+      </script>
+  </body>
+  <body>
+      <div>
+      <ol id="faves">
+      </ol>
+      <input type="text" id="add" size ="25"/>
+      <input type="button" id="btnAdd" value="Add" onclick="addItem()">
+      </div>
+    </br >
+    <button id="checkPage" style="background-color:teal; color:white"><font face="WildWest" size="2"> <a href="listitweb.html"> visit us! </a> </font></button>
+      <p> <img src="1.png" width="100px"> </p>
+  </body>
+</html>
+
+<!-- comment -->
